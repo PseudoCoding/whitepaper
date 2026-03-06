@@ -9,18 +9,18 @@ export const metadata = {
 };
 
 export const sections = [
-  { id: "executive-summary", label: "Executive Summary", icon: "📋" },
-  { id: "inflection-point", label: "The Inflection Point", icon: "📈" },
-  { id: "software-engineers", label: "Software Engineers", icon: "💻" },
-  { id: "qa-testers", label: "QA & Test Engineers", icon: "🧪" },
-  { id: "security-engineers", label: "Security Engineers", icon: "🔐" },
-  { id: "platform-engineers", label: "Platform Engineers", icon: "⚙️" },
-  { id: "engineering-leaders", label: "Engineering Leaders", icon: "🧭" },
-  { id: "product-managers", label: "Product Managers", icon: "🗺️" },
-  { id: "data-ml-engineers", label: "Data & ML Engineers", icon: "🧠" },
-  { id: "emerging-roles", label: "Emerging Roles", icon: "🌱" },
-  { id: "skills-imperative", label: "The Skills Imperative", icon: "🎯" },
-  { id: "conclusion", label: "Conclusion", icon: "🔭" },
+  { id: "executive-summary", label: "Executive Summary", icon: "clipboard" },
+  { id: "inflection-point", label: "The Inflection Point", icon: "trending-up" },
+  { id: "software-engineers", label: "Software Engineers", icon: "code" },
+  { id: "qa-testers", label: "QA & Test Engineers", icon: "flask" },
+  { id: "security-engineers", label: "Security Engineers", icon: "shield-lock" },
+  { id: "platform-engineers", label: "Platform Engineers", icon: "settings" },
+  { id: "engineering-leaders", label: "Engineering Leaders", icon: "compass" },
+  { id: "product-managers", label: "Product Managers", icon: "map" },
+  { id: "data-ml-engineers", label: "Data & ML Engineers", icon: "brain" },
+  { id: "emerging-roles", label: "Emerging Roles", icon: "sprout" },
+  { id: "skills-imperative", label: "The Skills Imperative", icon: "target" },
+  { id: "conclusion", label: "Conclusion", icon: "telescope" },
 ];
 
 export const content = {
@@ -63,7 +63,7 @@ export const content = {
   "software-engineers": {
     title: "Software Engineers",
     type: "role",
-    icon: "💻",
+    icon: "code",
     tagline: "From Code Writers to Engineering Directors",
     impactLevel: "High",
     timeline: "Transformation well underway",
@@ -118,7 +118,7 @@ export const content = {
   "qa-testers": {
     title: "QA & Test Engineers",
     type: "role",
-    icon: "🧪",
+    icon: "flask",
     tagline: "From Test Writers to Quality Strategists",
     impactLevel: "Very High",
     timeline: "Rapid transformation in progress",
@@ -173,7 +173,7 @@ export const content = {
   "security-engineers": {
     title: "Security Engineers",
     type: "role",
-    icon: "🔐",
+    icon: "shield-lock",
     tagline: "From Defenders to AI Red Team Operators",
     impactLevel: "Critical & Expanding",
     timeline: "Role expanding and bifurcating",
@@ -228,7 +228,7 @@ export const content = {
   "platform-engineers": {
     title: "Platform & Infrastructure Engineers",
     type: "role",
-    icon: "⚙️",
+    icon: "settings",
     tagline: "From Infrastructure Operators to Reliability Architects",
     impactLevel: "High",
     timeline: "Automation accelerating rapidly",
@@ -283,7 +283,7 @@ export const content = {
   "engineering-leaders": {
     title: "Engineering Leaders",
     type: "role",
-    icon: "🧭",
+    icon: "compass",
     tagline: "From Task Managers to Multipliers of Human-AI Systems",
     impactLevel: "Transformative",
     timeline: "The leadership model is being rewritten now",
@@ -338,7 +338,7 @@ export const content = {
   "product-managers": {
     title: "Product Managers",
     type: "role",
-    icon: "🗺️",
+    icon: "map",
     tagline: "From Requirement Writers to AI-Product Designers",
     impactLevel: "High",
     timeline: "New PM archetype emerging now",
@@ -393,7 +393,7 @@ export const content = {
   "data-ml-engineers": {
     title: "Data & ML Engineers",
     type: "role",
-    icon: "🧠",
+    icon: "brain",
     tagline: "From Model Builders to AI System Architects",
     impactLevel: "Complex — Growth and Specialization",
     timeline: "Bifurcating into two distinct disciplines",
@@ -453,37 +453,37 @@ export const content = {
     roles: [
       {
         title: "AI Systems Reliability Engineer",
-        icon: "🛡️",
+        icon: "shield",
         description:
           "Responsible for the production reliability of AI-powered systems — a discipline that combines traditional SRE practice with AI-specific concerns: model drift monitoring, inference latency SLOs, fallback orchestration, and the evaluation pipelines that ensure AI output quality doesn't degrade undetected.",
       },
       {
         title: "Prompt Architect / LLM Integration Engineer",
-        icon: "✍️",
+        icon: "pen-tool",
         description:
           "Designs the prompting strategies, context management systems, and multi-model orchestration architectures that complex AI applications require. Combines software engineering with deep knowledge of LLM behavior, capability, and failure modes.",
       },
       {
         title: "AI Red Team Operator",
-        icon: "🎯",
+        icon: "crosshair",
         description:
           "Adversarially probes AI systems for exploitable behaviors: jailbreaks, prompt injections, model inversion attacks, harmful output elicitation, and agentic privilege escalation. Reports findings to inform model safety mitigations and defensive architectures.",
       },
       {
         title: "AI Ethics & Responsible Deployment Engineer",
-        icon: "⚖️",
+        icon: "scale",
         description:
           "Embeds into product teams to evaluate AI features for fairness, bias, privacy implications, and compliance. Develops evaluation frameworks, audits training data and model outputs, and serves as the organizational conscience for AI product decisions.",
       },
       {
         title: "Agent Workflow Designer",
-        icon: "🔄",
+        icon: "loop",
         description:
           "Designs the multi-step task flows that autonomous AI agents execute. Defines tool sets, decision trees, handoff points to human review, escalation criteria, and the evaluation benchmarks that determine when an agent can be trusted with greater autonomy.",
       },
       {
         title: "Human-AI Interaction Designer",
-        icon: "🤝",
+        icon: "users",
         description:
           "Extends UX design to the unique challenges of AI-driven interfaces: calibrating user trust in AI outputs, designing for graceful failure, communicating AI uncertainty, and creating feedback mechanisms that improve AI behavior over time.",
       },
@@ -498,7 +498,7 @@ export const content = {
     clusters: [
       {
         category: "AI Direction & Collaboration",
-        icon: "🎮",
+        icon: "gamepad",
         skills: [
           "Prompt engineering and context management",
           "Understanding AI failure modes and hallucination patterns",
@@ -509,7 +509,7 @@ export const content = {
       },
       {
         category: "Systems Thinking",
-        icon: "🔗",
+        icon: "link",
         skills: [
           "Distributed systems architecture and failure analysis",
           "Sociotechnical systems design (humans + AI + process)",
@@ -520,7 +520,7 @@ export const content = {
       },
       {
         category: "Judgment & Context",
-        icon: "🧭",
+        icon: "compass",
         skills: [
           "Business context translation (tech ↔ value)",
           "Risk assessment and risk tolerance calibration",
@@ -531,7 +531,7 @@ export const content = {
       },
       {
         category: "Continuous Adaptation",
-        icon: "🌱",
+        icon: "sprout",
         skills: [
           "Rapid learning and skill model updating",
           "Intellectual humility about current knowledge",

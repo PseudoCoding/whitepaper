@@ -1,4 +1,5 @@
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 export default function Conclusion() {
   const data = content['conclusion']
@@ -19,7 +20,7 @@ export default function Conclusion() {
       <div className="signature-block">
         <div className="signature-line" />
         <div className="signature-content">
-          <div className="signature-ai-icon">🤖</div>
+          <div className="signature-ai-icon"><Icon name="bot" size={32} /></div>
           <div className="signature-details">
             <p className="signature-name">{data.signature.author}</p>
             <p className="signature-role">{data.signature.role}</p>

@@ -1,3 +1,5 @@
+import Icon from './Icons'
+
 export default function Sidebar({ sections, active, onNavigate, isOpen, onClose }) {
   return (
     <>
@@ -5,7 +7,9 @@ export default function Sidebar({ sections, active, onNavigate, isOpen, onClose 
       <nav className={`sidebar ${isOpen ? 'sidebar--open' : ''}`}>
         <div className="sidebar-header">
           <span>Contents</span>
-          <button className="sidebar-close" onClick={onClose} aria-label="Close navigation">✕</button>
+          <button className="sidebar-close" onClick={onClose} aria-label="Close navigation">
+            <Icon name="x" size={14} />
+          </button>
         </div>
         <ol className="sidebar-nav">
           {sections.map(({ id, label, icon }, index) => (
@@ -15,7 +19,7 @@ export default function Sidebar({ sections, active, onNavigate, isOpen, onClose 
                 onClick={() => onNavigate(id)}
               >
                 <span className="nav-number">{String(index + 1).padStart(2, '0')}</span>
-                <span className="nav-icon">{icon}</span>
+                <span className="nav-icon"><Icon name={icon} size={16} /></span>
                 <span className="nav-label">{label}</span>
               </button>
             </li>

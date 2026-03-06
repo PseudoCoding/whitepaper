@@ -1,4 +1,5 @@
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 export default function SkillsImperative() {
   const data = content['skills-imperative']
@@ -14,13 +15,13 @@ export default function SkillsImperative() {
         {data.clusters.map((cluster, i) => (
           <div key={i} className="skill-cluster">
             <div className="skill-cluster-header">
-              <span className="skill-cluster-icon">{cluster.icon}</span>
+              <span className="skill-cluster-icon"><Icon name={cluster.icon} size={24} /></span>
               <h3 className="skill-cluster-title">{cluster.category}</h3>
             </div>
             <ul className="skill-list">
               {cluster.skills.map((skill, j) => (
                 <li key={j} className="skill-item">
-                  <span className="skill-bullet">→</span>
+                  <span className="skill-bullet"><Icon name="arrow-right" size={14} /></span>
                   {skill}
                 </li>
               ))}
@@ -29,7 +30,7 @@ export default function SkillsImperative() {
         ))}
       </div>
       <div className="skills-note">
-        <span className="skills-note-icon">📌</span>
+        <span className="skills-note-icon"><Icon name="pin" size={18} /></span>
         <p>{data.note}</p>
       </div>
     </div>

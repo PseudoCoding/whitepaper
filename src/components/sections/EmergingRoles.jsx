@@ -1,4 +1,5 @@
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 export default function EmergingRoles() {
   const data = content['emerging-roles']
@@ -14,7 +15,7 @@ export default function EmergingRoles() {
         {data.roles.map((role, i) => (
           <div key={i} className="emerging-card">
             <div className="emerging-card-top">
-              <span className="emerging-icon">{role.icon}</span>
+              <span className="emerging-icon"><Icon name={role.icon} size={28} /></span>
               <h3 className="emerging-title">{role.title}</h3>
             </div>
             <p className="emerging-desc">{role.description}</p>

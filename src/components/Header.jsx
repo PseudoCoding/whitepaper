@@ -1,3 +1,5 @@
+import Icon from './Icons'
+
 export default function Header({ metadata, darkMode, onToggleDark, onMenuToggle }) {
   return (
     <header className="site-header">
@@ -18,7 +20,7 @@ export default function Header({ metadata, darkMode, onToggleDark, onMenuToggle 
             onClick={onToggleDark}
             aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
-            {darkMode ? '☀️' : '🌙'}
+            <Icon name={darkMode ? 'sun' : 'moon'} size={16} />
           </button>
         </div>
       </div>

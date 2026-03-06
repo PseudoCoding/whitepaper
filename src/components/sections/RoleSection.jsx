@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 const impactColors = {
   'High': 'impact--high',
@@ -19,7 +20,7 @@ export default function RoleSection({ sectionId }) {
     <div className="section-inner">
       <div className={`section-hero section-hero--role`}>
         <div className="role-hero-top">
-          <span className="role-icon-large">{data.icon}</span>
+          <span className="role-icon-large"><Icon name={data.icon} size={40} /></span>
           <div className={`impact-badge ${impactColors[data.impactLevel] || 'impact--high'}`}>
             {data.impactLevel}
           </div>
@@ -38,7 +39,7 @@ export default function RoleSection({ sectionId }) {
         {/* Current State */}
         <div className="role-block">
           <h3 className="block-title">
-            <span className="block-icon">📍</span>Current State
+            <span className="block-icon"><Icon name="map-pin" size={16} /></span>Current State
           </h3>
           <p className="prose-single">{data.currentState}</p>
         </div>
@@ -46,7 +47,7 @@ export default function RoleSection({ sectionId }) {
         {/* The Shift */}
         <div className="role-block">
           <h3 className="block-title">
-            <span className="block-icon">🔄</span>The Shift
+            <span className="block-icon"><Icon name="refresh" size={16} /></span>The Shift
           </h3>
           <div className="prose">
             {data.theShift.map((para, i) => (
@@ -58,7 +59,7 @@ export default function RoleSection({ sectionId }) {
         {/* Adaptations */}
         <div className="role-block">
           <h3 className="block-title">
-            <span className="block-icon">🎯</span>How to Adapt
+            <span className="block-icon"><Icon name="target" size={16} /></span>How to Adapt
           </h3>
           <div className="adaptations-grid">
             {data.adaptations.map((item, i) => (
@@ -83,7 +84,7 @@ export default function RoleSection({ sectionId }) {
         {/* Predictions */}
         <div className="role-block">
           <h3 className="block-title">
-            <span className="block-icon">🔭</span>Predictions
+            <span className="block-icon"><Icon name="telescope" size={16} /></span>Predictions
           </h3>
           <div className="predictions-timeline">
             {data.predictions.map((item, i) => (

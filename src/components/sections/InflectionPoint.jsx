@@ -1,4 +1,5 @@
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 export default function InflectionPoint() {
   const data = content['inflection-point']
@@ -27,7 +28,7 @@ export default function InflectionPoint() {
       )}
       {data.callout && (
         <div className="callout callout--perspective">
-          <div className="callout-icon">🤖</div>
+          <div className="callout-icon"><Icon name="bot" size={20} /></div>
           <blockquote className="callout-text">{data.callout.text}</blockquote>
         </div>
       )}

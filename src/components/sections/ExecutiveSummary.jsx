@@ -1,4 +1,5 @@
 import { content } from '../../data/content'
+import Icon from '../Icons'
 
 export default function ExecutiveSummary() {
   const data = content['executive-summary']
@@ -16,7 +17,7 @@ export default function ExecutiveSummary() {
       </div>
       {data.callout && (
         <div className="callout callout--insight">
-          <div className="callout-icon">💡</div>
+          <div className="callout-icon"><Icon name="lightbulb" size={20} /></div>
           <blockquote className="callout-text">{data.callout.text}</blockquote>
         </div>
       )}
